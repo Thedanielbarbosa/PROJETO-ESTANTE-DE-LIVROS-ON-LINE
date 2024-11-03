@@ -32,8 +32,15 @@ export function MenuLatetal(){
           
             <div className ="Estante">
 
-
-                <button>Buscar</button>
+                <div className="Barsearch">
+                    <div>
+                    <a href="#">all books</a>
+                    <a href="#">pratileiras</a>
+                    </div>
+                    
+                    <input type="text"/>
+                    <button className="button" >Buscar</button>
+                </div>
                 <div className="Pratileiras">
 
                     <div className = "EstanteReading">
