@@ -1,4 +1,8 @@
 import Search from './img/Search.svg';
+import bookmenu from './img/bookimg.svg';
+import house from './img/house.svg';
+import gear from './img/gear.svg';
+import books from './img/books.png'
 export function MenuLatetal(){
     return(
     
@@ -7,22 +11,26 @@ export function MenuLatetal(){
         <div className = "Barralateral">
 
             <div className ="Logo">
-                <a href= "#" className="logo">library</a>
+                <a href= "#" className="logo"><img className='imglogo' src={books}/>LIBRARY</a>
             </div>
 
             <div className="NavBar">
                 <ul>
-                <li><a href= "#">HOME</a></li>
-                <li><a href= "#">My library</a></li>
-                <li><a href= "#">Shop</a></li>
-                <li><a href= "#">Seting</a></li>
+                <li className ="btnmenu"><a  href= "#"><img className="bookimg" src={house}/>Home</a></li>
+                <li className ="btnmenu"><a  href= "#"><img className="bookimg" src={bookmenu}/> My library</a></li>
+                <li className ="btnmenu"><a  href= "#"><img className="bookimg" src={gear}/>Seting</a></li>
                 </ul>
             </div>
 
             <div className ="Bookreading">
-                <p>continue lendo</p>
-                <p>mycont</p>
-                
+                <div className = "mybookread">
+                    <div>
+                        <p>continue lendo</p>
+                        <p>mycont</p>
+                    </div>
+                    
+                    <img src = ''/>
+                </div>
             </div>
             
 
@@ -34,8 +42,8 @@ export function MenuLatetal(){
 
                 <div className="Barsearch">
                     <div className="barcategoria">
-                        <a href="#">all books</a>
-                        <a href="#">pratileiras</a>
+                        <a href="#">All books</a>
+                        <a href="#">Shelves</a>
                     </div>
                     <div className ="Search">
                         <button className="button" ><img className="imgsearch" src={Search}/></button>
@@ -49,6 +57,9 @@ export function MenuLatetal(){
                     <div className = "EstanteReading">
                         Reading
                         <div className ="books">
+                            <div className = "b">
+                                book
+                            </div>
                             <div className = "b">
                                 book
                             </div>
@@ -89,6 +100,9 @@ export function MenuLatetal(){
                             <div className = "b">
                                 book
                             </div>
+                            <div className = "b">
+                                book
+                            </div>
                         </div>
                         <div className ="pratileira">
 
@@ -98,6 +112,9 @@ export function MenuLatetal(){
                     <div className = "EstanteFinished">
                         Finished
                         <div className ="books">
+                            <div className = "b">
+                                book
+                            </div>
                             <div className = "b">
                                 book
                             </div>

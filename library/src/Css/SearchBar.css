@@ -8,6 +8,16 @@
 a {
   text-decoration: none;
   color: none;
+
+}
+
+a:link {
+  color: #38291A;
+}
+
+/* link que foi visitado */
+a:visited {
+   color: #38291A;
 }
 
 .Barsearch {
