@@ -3,7 +3,11 @@ import bookmenu from './img/bookimg.svg';
 import house from './img/house.svg';
 import gear from './img/gear.svg';
 import books from './img/books.png'
+
+import { findAll } from "./MenuLateralApi";
 export function MenuLatetal(){
+
+
     return(
     
     <div className="App">

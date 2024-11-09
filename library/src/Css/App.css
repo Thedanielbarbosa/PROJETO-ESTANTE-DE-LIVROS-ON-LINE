@@ -22,6 +22,8 @@ a {
   grid-template-rows: 0.2fr;
   background-color: white;
   height: 100vh;
+ 
+
 }
 .Logo {
   display: flex;
