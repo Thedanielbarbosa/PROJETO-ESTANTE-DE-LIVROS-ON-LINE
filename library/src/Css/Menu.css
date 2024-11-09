@@ -1,4 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Moul&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.Logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    font-family: Moul;
+    font-size: 20px;
+    margin:20px;
+    font-style: normal;
+  }
+  .imglogo{
+    width: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .NavBar {
+    display: flex;
+    flex-direction: column;
+  
+    margin-left: 17%;
+  }
+  
+  .NavBar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    height: 300px;
+    
+  }
+
+  
+  .Bookreading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    margin-bottom: 50px;
+  
+  }
+
 .mybookread{
 display: flex;
   flex-direction: column;

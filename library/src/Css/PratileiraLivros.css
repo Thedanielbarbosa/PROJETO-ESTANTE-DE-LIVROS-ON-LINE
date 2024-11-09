@@ -1,0 +1,30 @@
+.Pratileira {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 50px;
+}
+
+.books {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+.pratileiradolivro {
+  width: 100%;
+  height: 27px;
+  border-radius: 5px;
+  background-color: #e9d8c3;
+  box-shadow: -0px -4px 8px 1px #c5a580 inset, -0px 2px 11px 4px #ffffff inset,
+    0px 8px 11px 1px #b3b3b3;
+  color: #e9d8c3;
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }

@@ -14,8 +14,7 @@ export async function findAll(){
 
     if(httpResponse.ok){
         return await httpResponse.json();
-    }
-    else{
+    }else{
         throw new Error(
             "Não foi possivel obter os livro desejado, por gentileza entrar em contato com o suporte."
         );
