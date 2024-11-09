@@ -48,14 +48,75 @@ export function MenuLatetal(){
 
                     <div className = "EstanteReading">
                         Reading
+                        <div className ="books">
+                            <div className = "b">
+                                book
+                            </div>
+                            <div className = "b">
+                                book
+                            </div>
+                            <div className = "b">
+                                book
+                            </div>
+                            <div className = "b">
+                                book
+                            </div>
+                            <div className = "b">
+                                book
+                            </div>
+                        </div>
+                        
+                        <div className ="pratileira">
+
+                        </div>
                     </div>
 
                     <div className = "EstanteNext">
                         Next
+                        <div className ="books">
+                            <div className = "b">
+                                book
+                            </div>
+                            <div className = "b">
+                                book
+                            </div>
+                            <div className = "b">
+                                book
+                            </div>
+                            <div className = "b">
+                                book
+                            </div>
+                            <div className = "b">
+                                book
+                            </div>
+                        </div>
+                        <div className ="pratileira">
+
+                        </div>
                     </div>
                     
                     <div className = "EstanteFinished">
                         Finished
+                        <div className ="books">
+                            <div className = "b">
+                                book
+                            </div>
+                            <div className = "b">
+                                book
+                            </div>
+                            <div className = "b">
+                                book
+                            </div>
+                            <div className = "b">
+                                book
+                            </div>
+                            <div className = "b">
+                                book
+                            </div>
+                        </div>
+                        <div className ="pratileira">
+
+                        </div>
                     </div>
                 </div>
 
