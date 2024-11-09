@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: none;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 0.2fr auto;
+  height: 100vh;
+}
+
+.Barralateral {
+  display: grid;
+  grid-template-rows: 0.2fr;
+  background-color: white;
+  height: 100vh;
+}
+.Logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  font-family: Montserrat;
+}
+
+.NavBar {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 20%;
+}
+
+.NavBar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
+}
+
+.Bookreading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Conteudo {
+  display: grid;
+  grid-template-rows: 1fr;
+  background-color: white;
+  height: 100vh;
+}
+
+.Estante {
+  display: grid;
+  border-radius: 30px;
+  margin: 30px;
+  height: 100vh;
+  background-color: #f7eee9;
+  box-shadow: 2px 2px 10px #dcd1c8 inset, -2px -2px 10px #dcd1c8 inset;
+  height: 90vh;
+}
