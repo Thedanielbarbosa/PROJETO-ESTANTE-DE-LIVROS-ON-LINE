@@ -1,4 +1,4 @@
-
+import Search from './img/Search.svg';
 export function MenuLatetal(){
     return(
     
@@ -33,13 +33,16 @@ export function MenuLatetal(){
             <div className ="Estante">
 
                 <div className="Barsearch">
-                    <div>
-                    <a href="#">all books</a>
-                    <a href="#">pratileiras</a>
+                    <div className="barcategoria">
+                        <a href="#">all books</a>
+                        <a href="#">pratileiras</a>
                     </div>
-                    
-                    <input type="text"/>
-                    <button className="button" >Buscar</button>
+                    <div className ="Search">
+                        <button className="button" ><img className="imgsearch" src={Search}/></button>
+                        <input className="input" type="text"  
+                        placeholder="Search" />
+                        
+                    </div>
                 </div>
                 <div className="Pratileiras">
 

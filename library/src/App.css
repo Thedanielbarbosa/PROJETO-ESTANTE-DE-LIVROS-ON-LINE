@@ -77,8 +77,11 @@ a{
 .button{
   
   align-items: center;
-  margin-top: 20px;
-  width: 200px;
+  width: 50px;
+  border: none;
+  background-color: #DCD1C8;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 .Pratileiras{
   display: grid;
@@ -91,11 +94,39 @@ a{
 .Barsearch{
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  align-items:center;
   margin-top: 2%;
   margin-left: 30%;
   background-color: white;
   width: 50%;
+  height: 75%;
   border-radius: 10px;
+}
+.Search{
+  display: flex;
+  background-color: #DCD1C8;
+  border-radius: 10px;
+  width: 74%;
+}
+
+.imgsearch{
+  width: 20px;
+}
+.input{
+
+  border-radius: 10px;
+  width: 90%;
+  height: 40px;
+  border: none;
+  background-color: #DCD1C8;
+}
+
+.barcategoria{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 20%;
+  margin-right: 20px;
+  margin-left: 20px;
+
 }
