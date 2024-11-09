@@ -79,7 +79,7 @@ a{
   align-items: center;
   width: 50px;
   border: none;
-  background-color: #DCD1C8;
+  background-color: #F7eee9;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -100,11 +100,13 @@ a{
   background-color: white;
   width: 50%;
   height: 75%;
-  border-radius: 10px;
+  border-radius: 20px;
+  padding: 2px;
+  box-shadow: 0px 8px 11px 1px #CECECE;
 }
 .Search{
   display: flex;
-  background-color: #DCD1C8;
+  background-color: #F7eee9;
   border-radius: 10px;
   width: 74%;
 }
@@ -118,7 +120,7 @@ a{
   width: 90%;
   height: 40px;
   border: none;
-  background-color: #DCD1C8;
+  background-color: #F7eee9;
 }
 
 .barcategoria{
