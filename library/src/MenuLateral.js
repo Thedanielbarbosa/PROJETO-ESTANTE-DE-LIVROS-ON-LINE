@@ -82,7 +82,7 @@ export function MenuLatetal(){
                         Reading
                         <div className ="books">
                             <div className='b'>
-                                <img className ="booksimg" src = "http://books.google.com/books/content?id=jAUODAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"/>
+                                <img className ="booksimg" src = "http://books.google.com/books/content?id=IOejDAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"/>
                             </div>
 
                             <div className='b'>
@@ -107,17 +107,17 @@ export function MenuLatetal(){
                         Reading
                         <div className ="books">
                             <div className='b'>
-                                <img className ="booksimg" src = "http://books.google.com/books/content?id=jAUODAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"/>
+                                <img className ="booksimg" src = "http://books.google.com/books/content?id=evuwdDLfAyYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"/>
                             </div>
 
                             <div className='b'>
-                                <img className ="booksimg" src = "http://books.google.com/books/content?id=jAUODAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"/>
+                                <img className ="booksimg" src = "http://books.google.com/books/content?id=IOejDAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"/>
                             </div>
                             <div className='b'>
-                                <img className ="booksimg" src = "http://books.google.com/books/content?id=nggnmAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"/>
+                                <img className ="booksimg" src = "http://books.google.com/books/content?id=sJf1vQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"/>
                             </div>
                             <div className='b'>
-                                <img className ="booksimg" src =  "http://books.google.com/books/content?id=1wy49i-gQjIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"/>
+                                <img className ="booksimg" src =  "http://books.google.com/books/content?id=jAUODAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"/>
                             </div>
 
                             
