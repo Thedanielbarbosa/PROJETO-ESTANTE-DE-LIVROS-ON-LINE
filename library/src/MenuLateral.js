@@ -1,13 +1,18 @@
+// Importando o img
 import Search from './img/Search.svg';
+
 import bookmenu from './img/bookimg.svg';
+
 import house from './img/house.svg';
+
 import gear from './img/gear.svg';
+
 import logobooks from './img/books.png'
 
 import {useState} from "react";
 
 import { findAll } from "./MenuLateralApi";
-
+import fotoperfil from "./img/Killua.jpg"
 
 export function MenuLatetal(){
 
@@ -41,8 +46,11 @@ export function MenuLatetal(){
                             <p>continue lendo</p>
                             <p>mycont</p>
                         </div>
-                        
-                        <img src = ''/>
+                       
+                        <div className='go'>
+                            <img className='Perfil'src = {fotoperfil}/>
+                            <p className='p'>Daniel</p>
+                        </div>
                     </div>
                 </div>
             
