@@ -11,12 +11,22 @@ import logobooks from './img/books.png'
 
 import {useState} from "react";
 
+import SearchInput from './SearchInput';
+
 import { findAll } from "./MenuLateralApi";
 import fotoperfil from "./img/Killua.jpg"
 
 export function MenuLatetal(){
 
     const [books, setBooks] = useState ([]);
+    const [ text, setText] = useState ('');
+
+    useEffect(()=> {
+
+
+
+    }, []);
+    
 
     return(
     
@@ -79,12 +89,13 @@ export function MenuLatetal(){
                     </div>
                     <div className ="Search">
                         <button className="button" ><img className="imgsearch" src={Search}/></button>
-                        <input className="input" type="text"  
-                        placeholder="Search" />
+
+                        <SearchInput value={text} onChange={(search)=> setText(search)} />
+                            
                         
                     </div>
                 </div>
-            
+                
 
                 <div className = "Pratileira">
                         Reading
