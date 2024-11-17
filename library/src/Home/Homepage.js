@@ -1,31 +1,28 @@
 // Importando o img
-import Search from './img/Search.svg';
+import Search from './../img/Search.svg';
 
-import bookmenu from './img/bookimg.svg';
+import bookmenu from './../img/bookimg.svg';
 
-import house from './img/house.svg';
+import house from './../img/house.svg';
 
-import gear from './img/gear.svg';
+import gear from './../img/gear.svg';
 
-import logobooks from './img/books.png'
+import logobooks from './../img/books.png'
 
 import {useState} from "react";
 
-import SearchInput from './SearchInput';
+import SearchInput from './../SearchInput';
 
-import { findAll } from "./MenuLateralApi";
-import fotoperfil from "./img/Killua.jpg"
+import { findAll } from "./../Api/libraryApi";
 
-export function MenuLatetal(){
+import fotoperfil from "./../img/Killua.jpg";
+
+export function Homepage(){
 
     const [books, setBooks] = useState ([]);
     const [ text, setText] = useState ('');
 
-    useEffect(()=> {
-
-
-
-    }, []);
+   
     
 
     return(

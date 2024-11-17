@@ -5,10 +5,10 @@ import './Css/basicstyle.css'
 import './Css/PratileiraLivros.css'
 
 
-import { MenuLatetal } from './MenuLateral';
+import { Homepage } from './Home/Homepage';
 
 function App() {
-  return <MenuLatetal/>
+  return <Homepage/>
 }
 
 export default App;
