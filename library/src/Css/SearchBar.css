@@ -39,6 +39,10 @@ a:visited {
   background-color: #f7eee9;
   border-radius: 10px;
   width: 74%;
+  
+}
+textarea:focus, input:focus, select:focus {
+  outline: 0;
 }
 .button {
   align-items: center;
@@ -47,6 +51,7 @@ a:visited {
   background-color: #f7eee9;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  
 }
 
 .imgsearch {

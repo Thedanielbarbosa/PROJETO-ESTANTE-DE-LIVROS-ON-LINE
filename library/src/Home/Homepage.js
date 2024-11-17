@@ -5,6 +5,8 @@ import bookmenu from './../img/bookimg.svg';
 
 import house from './../img/house.svg';
 
+import ExibirCapasLivros from './ExibirImagem'
+
 import gear from './../img/gear.svg';
 
 import logobooks from './../img/books.png'
@@ -13,19 +15,23 @@ import {useState} from "react";
 
 import SearchInput from './../SearchInput';
 
-import { findAll } from "./../Api/libraryApi";
+import { useEffect } from 'react';
+
+import { findAll} from "./../Api/libraryApi";
 
 import fotoperfil from "./../img/Killua.jpg";
+
 import { useNavigate } from 'react-router-dom';
 
 export function Homepage(){
 
     const [books, setBooks] = useState ([]);
     const [ text, setText] = useState ('');
+    const [imagemUrl, setImagemUrl] = useState(null);
+    
     const navigate = useNavigate();
-    const navigate2 = useNavigate();
     const NextPageShealve = () => { navigate('/Shealve')}
-    const NextPageHome = () => {navigate2('/')}
+    const NextPageHome = () => {navigate('/')}
 
    
     
@@ -83,6 +89,8 @@ export function Homepage(){
                         const dados = await findAll();
                         setBooks(dados) ;
                         }}
+
+                        
                         >
                         All books
                         </a>
@@ -104,40 +112,14 @@ export function Homepage(){
                 
 
                 <div className = "Pratileira">
-                     
-                        <div className ="books">
-                           
-
-                            
-                        </div>
-
                         
+                    <div className ="books">
                         
+                        <ExibirCapasLivros />
+                    </div>
+
                 </div>
-                <div className = "Pratileira">
-                       
-                        <div className ="books">
-                          
-
-                            
-                        </div>
-
-                       
-                        
-                </div>
-
-                <div className = "Pratileira">
-                       
-                        <div className ="books">
-                           
-
-                            
-                        </div>
-
-                        
-                </div>
-
-                
+             
 
             </div>
         </div>
