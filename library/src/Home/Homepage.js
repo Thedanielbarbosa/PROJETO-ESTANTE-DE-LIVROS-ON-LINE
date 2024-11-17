@@ -23,8 +23,6 @@ export function Homepage(){
     const [ text, setText] = useState ('');
 
    
-    
-
     return(
     
     <div className="GridBasicStructure">
