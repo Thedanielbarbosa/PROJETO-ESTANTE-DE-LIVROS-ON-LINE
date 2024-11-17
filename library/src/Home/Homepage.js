@@ -16,13 +16,20 @@ import SearchInput from './../SearchInput';
 import { findAll } from "./../Api/libraryApi";
 
 import fotoperfil from "./../img/Killua.jpg";
+import { useNavigate } from 'react-router-dom';
 
 export function Homepage(){
 
     const [books, setBooks] = useState ([]);
     const [ text, setText] = useState ('');
+    const navigate = useNavigate();
+    const navigate2 = useNavigate();
+    const NextPageShealve = () => { navigate('/Shealve')}
+    const NextPageHome = () => {navigate2('/')}
 
    
+    
+
     return(
     
     <div className="GridBasicStructure">
@@ -38,7 +45,7 @@ export function Homepage(){
             
                 <div className="NavBar">
                     <ul>
-                    <li className ="btnmenu"><a  href= "#"><img className="bookimg" src={house}/>Home</a></li>
+                    <li className ="btnmenu"> <a  href= "#" onClick={NextPageHome} ><img className="bookimg" src={house}/>Home</a></li>
                     <li className ="btnmenu"><a  href= "#"><img className="bookimg" src={bookmenu}/> My library</a></li>
                     <li className ="btnmenu"><a  href= "#"><img className="bookimg" src={gear}/>Seting</a></li>
                     </ul>
@@ -74,13 +81,17 @@ export function Homepage(){
 
                         <a href="#" onClick={async () =>{
                         const dados = await findAll();
-                        setBooks(dados);
+                        setBooks(dados) ;
                         }}
                         >
                         All books
                         </a>
 
-                        <a href="#">Shelves</a>
+                        <a href="#"
+                        
+                        onClick={NextPageShealve}
+
+                        >Shelves</a>
                     </div>
                     <div className ="Search">
                         <button className="button" ><img className="imgsearch" src={Search}/></button>
@@ -93,79 +104,36 @@ export function Homepage(){
                 
 
                 <div className = "Pratileira">
-                        Reading
+                     
                         <div className ="books">
-                            <div className='b'>
-                                <img className ="booksimg" src = "http://books.google.com/books/content?id=IOejDAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"/>
-                            </div>
-
-                            <div className='b'>
-                                <img className ="booksimg" src = "http://books.google.com/books/content?id=jAUODAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"/>
-                            </div>
-                            <div className='b'>
-                                <img className ="booksimg" src = "http://books.google.com/books/content?id=nggnmAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"/>
-                            </div>
-                            <div className='b'>
-                                <img className ="booksimg" src =  "http://books.google.com/books/content?id=1wy49i-gQjIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"/>
-                            </div>
+                           
 
                             
                         </div>
 
-                        <div className ="pratileiradolivro">
-                            .
-                         </div>
+                        
                         
                 </div>
                 <div className = "Pratileira">
-                        Reading
+                       
                         <div className ="books">
-                            <div className='b'>
-                                <img className ="booksimg" src = "http://books.google.com/books/content?id=evuwdDLfAyYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"/>
-                            </div>
-
-                            <div className='b'>
-                                <img className ="booksimg" src = "http://books.google.com/books/content?id=IOejDAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"/>
-                            </div>
-                            <div className='b'>
-                                <img className ="booksimg" src = "http://books.google.com/books/content?id=sJf1vQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"/>
-                            </div>
-                            <div className='b'>
-                                <img className ="booksimg" src =  "http://books.google.com/books/content?id=jAUODAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"/>
-                            </div>
+                          
 
                             
                         </div>
 
-                        <div className ="pratileiradolivro">
-                            .
-                         </div>
+                       
                         
                 </div>
 
                 <div className = "Pratileira">
-                        Reading
+                       
                         <div className ="books">
-                            <div className='b'>
-                                <img className ="booksimg" src = "http://books.google.com/books/content?id=jAUODAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"/>
-                            </div>
-
-                            <div className='b'>
-                                <img className ="booksimg" src = "http://books.google.com/books/content?id=jAUODAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"/>
-                            </div>
-                            <div className='b'>
-                                <img className ="booksimg" src = "http://books.google.com/books/content?id=nggnmAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"/>
-                            </div>
-                            <div className='b'>
-                                <img className ="booksimg" src =  "http://books.google.com/books/content?id=1wy49i-gQjIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"/>
-                            </div>
+                           
 
                             
                         </div>
 
-                        <div className ="pratileiradolivro">
-                            .
-                         </div>
                         
                 </div>
 

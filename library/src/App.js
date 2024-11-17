@@ -4,11 +4,22 @@ import './Css/Books.css'
 import './Css/basicstyle.css'
 import './Css/PratileiraLivros.css'
 
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
+import { Shealve } from './PageShelves/Shealve';
 import { Homepage } from './Home/Homepage';
 
+
+
 function App() {
-  return <Homepage/>
+  return (
+    <BrowserRouter>
+      <Routes>
+         <Route path='/'element={<Homepage/>}/>
+         <Route path='/Shealve'element={<Shealve/>}/>
+      </Routes>
+    </BrowserRouter>
+)
 }
 
 export default App;
