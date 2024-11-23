@@ -3,6 +3,7 @@ import './Css/Menu.css'
 import './Css/Books.css'
 import './Css/basicstyle.css'
 import './Css/PratileiraLivros.css'
+import './Css/Popup.css'
 
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
