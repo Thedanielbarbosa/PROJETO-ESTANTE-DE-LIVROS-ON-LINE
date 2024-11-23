@@ -177,14 +177,22 @@ const ExibirFavoritos = ({ favoritos = [] , abrirPopup = () => {} }) => {
                 <div className = "Pratileira">
                         Reading
                         <div className ="books">
-                            <div className='b'>
-                            <ExibirFavoritos favoritos={favoritos} abrirPopup={abrirPopup} />
-                            </div>
+                              {favoritos.map((fav) => (
+                                <div key={fav.id} className="livro-item">
+                                  <img
+                                    src={fav.imageUrl}
+                                    alt={fav.title}
+                                    className="img-livro"
+                                    onClick={() => abrirPopup(fav)}
+                                  />
+                                </div>
+                              ))}
+                            
                             
                         </div>
 
                         <div className ="pratileiradolivro">
-                            .
+                       
                          </div>
                         
                 </div>
