@@ -8,7 +8,6 @@ import './Css/Popup.css'
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
-import { Shealve } from './PageShelves/Shealve';
 import { Homepage } from './Home/Homepage';
 
 
@@ -18,7 +17,6 @@ function App() {
     <BrowserRouter>
       <Routes>
          <Route path='/'element={<Homepage/>}/>
-         <Route path='/Shealve'element={<Shealve/>}/>
       </Routes>
     </BrowserRouter>
 )
