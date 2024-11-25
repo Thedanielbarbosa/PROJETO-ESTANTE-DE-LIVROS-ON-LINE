@@ -45,6 +45,16 @@ export function Homepage() {
     // Adiciona o livro à pratileira
     setFinalizado((prev) => [...prev, favoritos]);
   };
+  setText=livros.title
+  useEffect(()=>{
+      if(text){
+        {livros.map((li) => (
+          setText=li.title
+            
+        ))}
+
+      }
+  }, [text]);
 
   useEffect(() => {
     const fetchLivros = async () => {
@@ -94,7 +104,6 @@ export function Homepage() {
   };
 
   const Exibirfinalizado = ({ finalizado = [] }) => {
-    console.log(finalizado);
 
     if (finalizado.length === 0) {
       return null; // Não exibe nada se não houver favoritos
@@ -193,6 +202,7 @@ export function Homepage() {
               <SearchInput
                 value={text}
                 onChange={(search) => setText(search)}
+                
               />
             </div>
           </div>
